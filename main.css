@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+a {
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+/* navbar admin */
+.navbar-brand {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler {
+  top: 0.25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: 0.75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+/* homepage */
+
+/* navbar - client */
+.form-control {
+  box-shadow: none;
+  border-radius: 4px;
+}
+
+.navbar {
+  background: #fff;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  border-bottom: 1px solid #dfe3e8;
+  border-radius: 0;
+}
+
+.navbar .navbar-brand {
+  padding-left: 0;
+  font-size: 20px;
+  padding-right: 50px;
+}
+
+.navbar .navbar-brand b {
+  font-weight: bold;
+  color: #eb5844;
+}
+
+.navbar .navbar-nav > a {
+  margin: 0 0.25rem;
+}
+
+.navbar a,
+.navbar a:active {
+  color: #888;
+  font-size: 15px;
+  background: transparent;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  color: #f08373;
+}
+
+.navbar .navbar-nav.show > a,
+.navbar .navbar-nav > a.active {
+  color: #eb5844 !important;
+  background: transparent !important;
+}
+
+.search-box {
+  width: 100%;
+  position: relative;
+}
+
+.search-box input {
+  border-color: #dfe3e8;
+  box-shadow: none;
+}
+
+.search-box input,
+.search-box .btn {
+  min-height: 38px;
+  border-radius: 2px;
+}
+
+.input-group-append .btn,
+.input-group-append .btn:active {
+  border-color: #eb5844;
+  background: #eb5844 !important;
+}
+
+.navbar .nav-item i {
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.navbar .search-dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar .dropdown-menu {
+  border-radius: 1px;
+  border-color: #e5e5e5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .dropdown-menu a {
+  padding: 6px 20px;
+}
+
+.navbar .search-dropdown .dropdown-menu {
+  width: 400px;
+  padding: 20px;
+  left: auto;
+  right: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-right .dropdown-menu {
+    width: 100%;
+    background: transparent;
+    padding: 10px 20px;
+  }
+
+  .navbar .input-group {
+    width: 100%;
+  }
+}

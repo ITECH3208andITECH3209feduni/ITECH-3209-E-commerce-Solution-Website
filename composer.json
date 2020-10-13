@@ -1,0 +1,7 @@
+{
+  "require": {
+    "botman/botman": "^2.6",
+    "phpmailer/phpmailer": "^6.1",
+    "vlucas/phpdotenv": "^5.1"
+  }
+}
